@@ -1,0 +1,111 @@
+﻿<Window x:Class="MosaicoApp.View.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MosaicoApp.View"
+        xmlns:vm="clr-namespace:MosaicoApp.ViewModel"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:api="serverclient"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"               
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Login" Height="450" Width="600" 
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" WindowStyle="None" 
+        ResizeMode="NoResize"
+        Background="Transparent">
+    <Window.Resources>
+        <SolidColorBrush x:Key="backgroundColor" Color="#343a40"/>
+        <SolidColorBrush x:Key="foregroundColor" Color="#f8f9fa"/>
+        <materialDesign:PackIcon Kind="Close" x:Key="iconClose"/>
+        <materialDesign:PackIcon Kind="Minimize" x:Key="iconMinimize"/>
+        <Style TargetType="materialDesign:Card">
+            <Setter Property="Background" Value="{StaticResource backgroundColor}"/>
+        </Style>
+
+        <vm:MosaicoVM x:Key="vm"/>
+    </Window.Resources>
+    
+  
+    <materialDesign:Card>
+        <DockPanel DataContext="{StaticResource vm}">
+
+            <StackPanel DockPanel.Dock="Top" 
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="4">
+                <Button
+                             x:Name="MinimizeWindowButton"
+                            Width="45"
+                            Height="25"
+                            Content="{StaticResource iconMinimize}"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignRaisedLightButton}"
+                            ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                            Margin="0 0 5 0"
+                            Click="MinimizeWindowButton_Click">
+                </Button>
+                <Button
+                            x:Name="CloseWindowButton"                           
+                            Width="45"
+                            Height="25"
+                            Content="{StaticResource iconClose}"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignRaisedLightButton}"
+                            ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                            Margin="0 0 5 0"
+                            Click="CloseWindowButton_Click">
+                </Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center"                      
+                        VerticalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" Margin="0 10 0 10"
+                    Style="{StaticResource MaterialDesignHeadline3TextBlock}"
+                    FontFamily="Segoe UI"
+                    Foreground="{StaticResource foregroundColor}"
+                    Text="Mosaico Login" />
+                <TextBox
+                    x:Name="UsernameTextBox"
+                    FontSize="18"
+                    Foreground="White"
+                    materialDesign:HintAssist.HelperText="Ex: fersilva09"
+                    materialDesign:HintAssist.HelperTextFontSize="13"
+                    materialDesign:HintAssist.Hint="Usuário"
+                    Width="190"
+                    Text="{Binding Username}"
+                    Margin="10">
+                </TextBox>
+
+                <TextBox
+                    x:Name="PasswordTextBox"
+                    FontSize="18"
+                    Foreground="White"
+                    materialDesign:HintAssist.HelperText="Ex: 878491"
+                    materialDesign:HintAssist.HelperTextFontSize="13"
+                    materialDesign:HintAssist.Hint="Senha"
+                    Width="190"
+                    Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    Margin="10">
+                </TextBox>
+
+                
+                <Button
+                    Margin="0 20 0 0"
+                    Width="180"
+                    Content="Entrar"
+                    Command="{Binding loginCommand}"
+                    CommandParameter="{Binding User}"
+                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                    Style="{StaticResource MaterialDesignRaisedButton}"
+                    ToolTip="Resource name: MaterialDesignRaisedButton" />
+                
+            </StackPanel>
+        </DockPanel>
+    </materialDesign:Card>
+  
+</Window>

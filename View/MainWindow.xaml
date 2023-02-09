@@ -1,0 +1,135 @@
+﻿<Window x:Class="MosaicoApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpf="clr-namespace:Vlc.DotNet.Wpf;assembly=Vlc.DotNet.Wpf"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:uc="clr-namespace:MosaicoApp.Usercontrols"
+        xmlns:vm="clr-namespace:MosaicoApp.ViewModel"
+        mc:Ignorable="d"
+        Title="Mosaico" Height="900" Width="1000" 
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" WindowStyle="None"
+        MouseDown="Window_MouseDown"
+        Background="Transparent">
+
+    <Window.Resources>
+        <vm:MosaicoVM x:Key="vm"/>
+        <materialDesign:PackIcon Kind="Close" x:Key="iconClose"/>
+        <materialDesign:PackIcon Kind="Minimize" x:Key="iconMinimize"/>
+    </Window.Resources>
+
+
+    <Border CornerRadius="10">
+        <materialDesign:Card Background="#343a40">
+        <Grid x:Name="MainGrid" 
+              DataContext="{StaticResource vm}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.33*"/>
+                        <ColumnDefinition Width="0.66*"/>
+                        <ColumnDefinition Width="0.33*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <ToolBarTray
+                         Grid.Column="1"
+                         HorizontalAlignment="Center"
+                         ClipToBounds="True"
+                         IsLocked="True">
+                        <ToolBar ClipToBounds="True"
+                            Style="{StaticResource MaterialDesignToolBar}"
+                            Padding="30 0 0 0">
+                            <Button 
+                                x:Name="twoXtwo"
+                                Margin="4"
+                                VerticalAlignment="Center"
+                                Command="{Binding changeUserControl}"
+                                CommandParameter="{Binding ElementName=twoXtwo}"
+                                Content="2x2"
+                                Style="{StaticResource MaterialDesignFlatButton}"/>
+                            <Button
+                                x:Name="threeXthree"
+                                Margin="4"
+                                VerticalAlignment="Center"
+                                Command="{Binding changeUserControl}"
+                                CommandParameter="{Binding ElementName=threeXthree}"
+                                Content="3x3"
+                                Style="{StaticResource MaterialDesignFlatButton}" />
+                            <Button
+                                x:Name="fourXfour"
+                                Margin="4"
+                                VerticalAlignment="Center"
+                                Command="{Binding changeUserControl}"
+                                CommandParameter="{Binding ElementName=fourXfour}"
+                                Content="4x4"
+                                Style="{StaticResource MaterialDesignFlatButton}" />
+                            <Button
+                                x:Name="fiveXfive"
+                                Margin="4"
+                                VerticalAlignment="Center"
+                                Command="{Binding changeUserControl}"
+                                CommandParameter="{Binding ElementName=fiveXfive}"
+                                Content="5x5"
+                                Style="{StaticResource MaterialDesignFlatButton}" />
+                            <Button
+                                x:Name="sixXsix"
+                                Margin="4"
+                                VerticalAlignment="Center"
+                                Command="{Binding changeUserControl}"
+                                CommandParameter="{Binding ElementName=sixXsix}"
+                                Content="6x6"
+                                Style="{StaticResource MaterialDesignFlatButton}" />
+                            <Button
+                                x:Name="sevenXseven"
+                                Margin="4"
+                                VerticalAlignment="Center"
+                                Command="{Binding changeUserControl}"
+                                CommandParameter="{Binding ElementName=sevenXseven}"
+                                Content="7x7"
+                                Style="{StaticResource MaterialDesignFlatButton}" />
+                        </ToolBar>
+                    </ToolBarTray>
+                    <StackPanel Grid.Column="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right">
+                        <Button
+                             x:Name="MinimizeWindowButton"
+                            Width="45"
+                            Height="25"
+                            Content="{StaticResource iconMinimize}"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignRaisedLightButton}"
+                            ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                            Margin="0 0 5 0"
+                            Click="MinimizeWindowButton_Click">
+                        </Button>
+                        <Button
+                            x:Name="CloseWindowButton"                           
+                            Width="45"
+                            Height="25"
+                            Content="{StaticResource iconClose}"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignRaisedLightButton}"
+                            ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                            Margin="0 0 5 0"
+                            Click="CloseWindowButton_Click">
+                        </Button>
+
+                    </StackPanel>
+                </Grid>
+          
+            <Frame NavigationUIVisibility="Hidden"
+                   x:Name="MosaicoFrame"
+                   Content="{Binding CurrentPage}"
+                   Grid.Row="1">
+                
+            </Frame>
+        </Grid>
+    </materialDesign:Card>
+    </Border>
+</Window>

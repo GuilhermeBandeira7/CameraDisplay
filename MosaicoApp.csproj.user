@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Page2x2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Page3x3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Page4x4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Page5x5.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Page6x6.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Page7x7.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\2x2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\3x3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\4x4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\5x5.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\6x6.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\7x7.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SelectedCamera.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\Page2x2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Page3x3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Page4x4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Page5x5.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Page6x6.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Page7x7.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Usercontrols\2x2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Usercontrols\3x3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Usercontrols\4x4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Usercontrols\5x5.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Usercontrols\6x6.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Usercontrols\7x7.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SelectedCamera.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

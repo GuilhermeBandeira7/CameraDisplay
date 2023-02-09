@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibVLCSharp" Version="3.6.7" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.2-ci148" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0-ci148" />
+    <PackageReference Include="MaterialDesignThemes.MahApps" Version="2.1.2-ci148" />
+    <PackageReference Include="Vlc.DotNet.Core" Version="3.1.0" />
+    <PackageReference Include="Vlc.DotNet.Wpf" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Desktop\MTWServerApi\ApiClientMtwServer\ApiClientMtwServer.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Desktop\MTWServerApi\EntityMtwServer\EntityMtwServer.csproj" />
+  </ItemGroup>
+
+</Project>

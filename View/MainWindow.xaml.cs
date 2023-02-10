@@ -54,5 +54,17 @@ namespace MosaicoApp
                 DragMove();
             }
         }
+
+        private void MaximizeWindowButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(WindowState == WindowState.Normal)
+            {
+                WindowState = WindowState.Maximized;
+            }
+            else
+            {
+                WindowState = WindowState.Normal;    
+            }
+        }
     }
 }

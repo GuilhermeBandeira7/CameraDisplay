@@ -60,6 +60,60 @@ namespace MosaicoApp.Usercontrols
             CameraDisplay8?.SourceProvider.MediaPlayer?.Dispose();
             CameraDisplay9?.SourceProvider.Dispose();
             CameraDisplay9?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay10?.SourceProvider.Dispose();
+            CameraDisplay10?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay11?.SourceProvider.Dispose();
+            CameraDisplay11?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay12?.SourceProvider.Dispose();
+            CameraDisplay12?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay13?.SourceProvider.Dispose();
+            CameraDisplay13?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay14?.SourceProvider.Dispose();
+            CameraDisplay14?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay15?.SourceProvider.Dispose();
+            CameraDisplay15?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay16?.SourceProvider.Dispose();
+            CameraDisplay16?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay17?.SourceProvider.Dispose();
+            CameraDisplay17?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay18?.SourceProvider.Dispose();
+            CameraDisplay18?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay19?.SourceProvider.Dispose();
+            CameraDisplay19?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay20?.SourceProvider.Dispose();
+            CameraDisplay20?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay21?.SourceProvider.Dispose();
+            CameraDisplay21?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay22?.SourceProvider.Dispose();
+            CameraDisplay22?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay23?.SourceProvider.Dispose();
+            CameraDisplay23?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay24?.SourceProvider.Dispose();
+            CameraDisplay24?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay25?.SourceProvider.Dispose();
+            CameraDisplay25?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay26?.SourceProvider.Dispose();
+            CameraDisplay26?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay27?.SourceProvider.Dispose();
+            CameraDisplay27?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay28?.SourceProvider.Dispose();
+            CameraDisplay28?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay29?.SourceProvider.Dispose();
+            CameraDisplay29?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay30?.SourceProvider.Dispose();
+            CameraDisplay30?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay31?.SourceProvider.Dispose();
+            CameraDisplay31?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay32?.SourceProvider.Dispose();
+            CameraDisplay32?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay33?.SourceProvider.Dispose();
+            CameraDisplay33?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay34?.SourceProvider.Dispose();
+            CameraDisplay34?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay35?.SourceProvider.Dispose();
+            CameraDisplay35?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay36?.SourceProvider.Dispose();
+            CameraDisplay36?.SourceProvider.MediaPlayer?.Dispose();
         }
 
         internal void StartCameraVideos()
@@ -90,6 +144,87 @@ namespace MosaicoApp.Usercontrols
 
             CameraDisplay9.SourceProvider.CreatePlayer(vlcLibDirectory);
             CameraDisplay9.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(8));
+
+            CameraDisplay10.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay10.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(9));
+
+            CameraDisplay11.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay11.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(10));
+
+            CameraDisplay12.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay12.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(11));
+
+            CameraDisplay13.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay13.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(12));
+
+            CameraDisplay14.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay14.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(13));
+
+            CameraDisplay15.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay15.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(14));
+
+            CameraDisplay16.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay16.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(15));
+
+            CameraDisplay17.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay17.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(16));
+
+            CameraDisplay18.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay18.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(17));
+
+            CameraDisplay19.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay19.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(18));
+
+            CameraDisplay20.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay20.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(19));
+
+            CameraDisplay21.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay21.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(20));
+
+            CameraDisplay22.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay22.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(21));
+
+            CameraDisplay23.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay23.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(22));
+
+            CameraDisplay24.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay24.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(23));
+
+            CameraDisplay25.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay25.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(24));
+
+            CameraDisplay26.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay26.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(25));
+
+            CameraDisplay27.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay27.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(26));
+
+            CameraDisplay28.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay28.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(27));
+
+            CameraDisplay29.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay29.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(28));
+
+            CameraDisplay30.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay30.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(29));
+
+            CameraDisplay31.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay31.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(30));
+
+            CameraDisplay32.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay32.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(31));
+
+            CameraDisplay33.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay33.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(32));
+
+            CameraDisplay34.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay34.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(33));
+
+            CameraDisplay35.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay35.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(34));
+
+            CameraDisplay36.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay36.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(35));
         }
 
         private void DisplaySelectedCamera(object sender, MouseButtonEventArgs e)

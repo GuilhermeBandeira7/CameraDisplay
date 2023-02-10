@@ -73,7 +73,7 @@
                     x:Name="UsernameTextBox"
                     FontSize="18"
                     Foreground="White"
-                    materialDesign:HintAssist.HelperText="Ex: fersilva09"
+                    materialDesign:HintAssist.HelperText="Ex: usuário1"
                     materialDesign:HintAssist.HelperTextFontSize="13"
                     materialDesign:HintAssist.Hint="Usuário"
                     Width="190"
@@ -85,7 +85,7 @@
                     x:Name="PasswordTextBox"
                     FontSize="18"
                     Foreground="White"
-                    materialDesign:HintAssist.HelperText="Ex: 878491"
+                    materialDesign:HintAssist.HelperText="Ex: password123#"
                     materialDesign:HintAssist.HelperTextFontSize="13"
                     materialDesign:HintAssist.Hint="Senha"
                     Width="190"
@@ -102,7 +102,7 @@
                     CommandParameter="{Binding User}"
                     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignRaisedButton}"
-                    ToolTip="Resource name: MaterialDesignRaisedButton" />
+                    ToolTip="Entrar no sistema." />
                 
             </StackPanel>
         </DockPanel>

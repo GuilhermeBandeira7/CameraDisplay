@@ -60,6 +60,20 @@ namespace MosaicoApp.Usercontrols
             CameraDisplay8?.SourceProvider.MediaPlayer?.Dispose();
             CameraDisplay9?.SourceProvider.Dispose();
             CameraDisplay9?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay10?.SourceProvider.Dispose();
+            CameraDisplay10?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay11?.SourceProvider.Dispose();
+            CameraDisplay11?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay12?.SourceProvider.Dispose();
+            CameraDisplay12?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay13?.SourceProvider.Dispose();
+            CameraDisplay13?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay14?.SourceProvider.Dispose();
+            CameraDisplay14?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay15?.SourceProvider.Dispose();
+            CameraDisplay15?.SourceProvider.MediaPlayer?.Dispose();
+            CameraDisplay16?.SourceProvider.Dispose();
+            CameraDisplay16?.SourceProvider.MediaPlayer?.Dispose();
         }
 
         internal void StartCameraVideos()
@@ -90,6 +104,25 @@ namespace MosaicoApp.Usercontrols
 
             CameraDisplay9.SourceProvider.CreatePlayer(vlcLibDirectory);
             CameraDisplay9.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(8));
+
+            CameraDisplay10.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay10.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(9));
+
+            CameraDisplay12.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay12.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(10));
+
+            CameraDisplay13.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay13.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(11));
+
+            CameraDisplay14.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay14.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(12));
+                         
+            CameraDisplay15.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay15.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(13));
+                         
+            CameraDisplay16.SourceProvider.CreatePlayer(vlcLibDirectory);
+            CameraDisplay16.SourceProvider.MediaPlayer.Play(MosaicoController.Instance.listRtsp.ElementAt(5));
+                                   
         }
 
         private void DisplaySelectedCamera(object sender, MouseButtonEventArgs e)

@@ -18,6 +18,7 @@
         <vm:MosaicoVM x:Key="vm"/>
         <materialDesign:PackIcon Kind="Close" x:Key="iconClose"/>
         <materialDesign:PackIcon Kind="Minimize" x:Key="iconMinimize"/>
+        <materialDesign:PackIcon Kind="Maximize" x:Key="iconMaximize"/>
     </Window.Resources>
 
 
@@ -99,7 +100,7 @@
                                 HorizontalAlignment="Right">
                         <Button
                              x:Name="MinimizeWindowButton"
-                            Width="45"
+                            Width="46"
                             Height="25"
                             Content="{StaticResource iconMinimize}"
                             IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
@@ -109,8 +110,19 @@
                             Click="MinimizeWindowButton_Click">
                         </Button>
                         <Button
+                             x:Name="MaximizeWindowButton"
+                            Width="46"
+                            Height="25"
+                            Content="{StaticResource iconMaximize}"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignRaisedLightButton}"
+                            ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                            Margin="0 0 5 0"
+                            Click="MaximizeWindowButton_Click">
+                        </Button>
+                        <Button
                             x:Name="CloseWindowButton"                           
-                            Width="45"
+                            Width="46"
                             Height="25"
                             Content="{StaticResource iconClose}"
                             IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
